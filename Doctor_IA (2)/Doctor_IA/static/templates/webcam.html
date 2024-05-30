@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento-HealthAssist</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="icon" href="/static/assets/Icono-facial.png" type="image/x-icon">
+    <script defer src="/static/js/face-api.min.js"></script>
+</head>
+
+<body style="background-image: url('/static/assets/medi-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="logo-container" style="position: absolute; top: 20px; left: 20px;">
+        <img src="/static/assets/logo.png" alt="Logo de HealthAssist" style="width: 200px; height: auto;">
+    </div>
+    <div class="container" style="text-align: center; margin-top: 100px;">
+        <h1>¡Bienvenido a HealthAssist!</h1>
+        <p style="margin-top: 60px; font-size: 1.2em;">Mantente al frente de la cámara para que pueda reconocer que hay un paciente y así puedas hablar con tu asistente médico inteligente.</p>
+    </div>
+    
+    <div class="video-container" style="text-align: center; margin-top: 30px;">
+        <video id="inputVideo" autoplay muted playsinline></video>
+        <canvas id="overlay"></canvas>
+    </div>
+
+    <script defer src="/static/js/script_webcam.js"></script>
+    <script defer src="/static/js/chat.js"></script>
+</body>
+
+</html>
